@@ -1,0 +1,84 @@
+{% extends "index.html"%}
+{% load static %}
+
+
+{% block content %}
+<style>
+        span.psw {
+        float: right;
+        padding-top: 16px;
+        }
+        @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    }  
+    body{
+            background-image: url("{% static 'Cancer images/cancer blue ribbon.jpg'%}");
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+</style>
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{% static 'Cancer images/oncology logo.png'%}" class="img img-thumbnail rounded-circle w-100 mt-5" alt="">
+            </div>
+            <div class="col-sm-6 mt-5">
+                <div>
+                <h1 style="font-family:Agency FB" class="text-white">LOGIN</h1>
+                <span>{{msg}}</span>
+                    <form action="/logincheck" method="">
+                        <div class="mb-3">
+                            <input class="form-control border-3 border-dark" type="mail" name="Mail" id="Mail-id" placeholder="Email-Id" required>
+                        </div>
+                        <div class="mb-2">
+                            <input class="form-control border-3 border-dark" type="password" name="Password" id="Password" placeholder="Password" required>
+                        </div>          
+                   <!-- <div class="mb-2">
+                        <select class="form-select border-black border-3" name="HospitalName" id="Hospital">
+                             <option value="-">--Select Hospital--</option>
+                             <option value="HCG">HCG Cancer Center,Visakhapatnam<s/option>
+                             <option value="American">American Oncology Institute,Guntur</option>
+                            <option value="SVIMS">Sri Venkateswara Institute of Medical Sciences,Tirupati</option>
+                            <option value="Mahatma">Mahatma Gandhi Cancer Hospital & Research Institute,Visakhapatnam</option>
+                            <option value="TT">Tata Trust's Cancer Hospital,Tirupati</option>
+                        </select>     
+                       </div>
+                     </div>
+                
+                        <div class="mb-2">
+                            <input class="form-control border-3 border-dark" type="tel" name="Phoneno" id="Phoneno" placeholder="Contact Number">
+                        </div> -->
+    
+                        
+                        <div class="mb-2 ">
+                                <button class="btn btn-success " type="submit">Login</button>
+                                <div>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                  </label>
+                                  </div>
+                                </div>
+                              
+                                <div class="container">
+                                  <button type="button" class="cancel btn btn-danger">Cancel</button>
+                                  <span class="psw" style="color: whitesmoke;" >Forgot <a href="https://www.gmail.com" style="color: whitesmoke;">password?</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

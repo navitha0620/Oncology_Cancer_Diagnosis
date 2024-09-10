@@ -1,0 +1,106 @@
+{% extends "room.html"%}
+{% load static %}
+
+
+{% block content %}
+<style>
+   body{
+     background-color: black;
+      color: white;
+    }
+    h1{
+        text-align: center;
+    }
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /*body{
+            background-image: url("{% static 'Cancer images/cancer blue ribbon.jpg'%}");
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }*/
+</style>
+<body>
+    <h1 style="font-family:Agency FB  " class="text-white">CONTACT US</h1>
+    <div class="container">
+        <div class="container ">
+            <div class="row">
+                    <div class="col-sm-6">
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#demo" data-bs-slide-to="0" class="active"> </button>
+                                <button data-bs-target="#demo" data-bs-slide-to="1" > </button>
+                                <button data-bs-target="#demo" data-bs-slide-to="2" > </button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{% static 'Cancer images/HCG hospital.png'%}" class="img img-fluid rounded-circle w-100 mt-3" alt="">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="{% static 'Cancer images/HCG.png'%}" class="img img-fluid rounded-circle w-100 mt-3" alt="">
+                                </div>
+                              <!--  <div class="carousel-item ">
+                                    <img src="{% static 'Cancer images/cancer diagnosis & prognosis.webp'%}"  class="img img-fluid rounded-circle w-100 mt-3" alt="">
+                                </div>
+                                <div class="carousel-item ">
+                                    <img src="{% static 'Cancer images/cancer diagnosis.webp'%}" class="img img-fluid rounded-circle w-100 mt-3" alt="">
+                                </div>-->
+                            </div>
+                        </div>   
+                    </div>
+                <div class="col-sm-6 text-dark">
+                    <span>{{msg}}</span>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                 <!--   <form action="actionHCG">
+                        <label for="fname"></label>
+                            <input class="form-control border-3 border-dark"  type="text" id="fname" name="firstname" placeholder="Your Name">-->
+                            <input type="hidden" name="access_key" value="ba3d98e6-e51f-4505-921c-5c528e291fbf">
+                            <div class="mb-3">
+                                <input class="form-control border-3 border-dark" type="mail" name="Mail" id="Mail-id" placeholder="Email-Id">
+                            </div>
+                            <div class="mb-2">
+                                <select class="form-select border-black border-3" name="HospitalName" id="Hospital">
+                                     <option value="-">--Select Hospital--</option>
+                                     <option value="HCG">HCG Cancer Center,Visakhapatnam</option>
+                                     <option value="American">American Oncology Institute,Guntur</option>
+                                    <option value="SVIMS">Sri Venkateswara Institute of Medical Sciences,Tirupati</option>
+                                    <option value="Mahatma">Mahatma Gandhi Cancer Hospital & Research Institute,Visakhapatnam</option>
+                                    <option value="TT">Tata Trust's Cancer Hospital,Tirupati</option>
+                                </select>     
+                        </div>
+                        <div class="mb-2">
+                            <input class="form-control border-3 border-dark" type="tel" name="Phoneno" id="Phoneno" placeholder="Contact Number">
+                        </div>
+                        
+                    <label for="subject"></label>
+                        <textarea class="form-control border-3 border-dark" id="subject" name="subject" placeholder="Message" style="height:200px" ></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
