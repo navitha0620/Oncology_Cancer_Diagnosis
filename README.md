@@ -56,7 +56,7 @@ The Oncology Cancer Diagnosis project provides a simple and effective solution f
 
 ---
 ## Video
-[![Watch the video](https://raw.githubusercontent.com/navitha0620/Oncology_Cancer_Diagnosis/blob/main/Oncology_Research_Logo.png)](https://raw.githubusercontent.com/navitha0620/Oncology_Cancer_Diagnosis/blob/main/Screen%20Recording%202026-01-28%20225559.mp4)
+[![Watch the video](https://raw.githubusercontent.com/navitha0620/Oncology_Cancer_Diagnosis/main/Oncology_Research_Logo.png)](https://raw.githubusercontent.com/navitha0620/Oncology_Cancer_Diagnosis/main/Screen%20Recording%202026-01-28%20225559.mp4)
 
 
 
