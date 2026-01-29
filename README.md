@@ -55,7 +55,9 @@ Oncology_Cancer_Diagnosis/
 The Oncology Cancer Diagnosis project provides a simple and effective solution for managing patient information in healthcare systems. It enhances data accessibility, security, and communication, and can be further extended with advanced analytics or AI-based diagnosis support.
 
 ---
-## Video
+## 🎥 Video
+
+Watch the project demo video
 [![Watch the video](https://raw.githubusercontent.com/navitha0620/Oncology_Cancer_Diagnosis/main/Oncology_Research_Logo.png)](https://raw.githubusercontent.com/navitha0620/Oncology_Cancer_Diagnosis/main/Screen%20Recording%202026-01-28%20225559.mp4)
 
 
