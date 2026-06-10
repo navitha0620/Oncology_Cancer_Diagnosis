@@ -31,15 +31,6 @@ Cancer diagnosis and patient data handling require secure and organized systems.
 - Access medical reports securely
 - Submit queries through the contact form
 
----
-##  Project Structure
-Oncology_Cancer_Diagnosis/
-├── app/
-├── templates/
-├── static/
-├── manage.py
-├── requirements.txt
-├── README.md
 
 ---
 ##  Project Insights
